@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="ZjM9NcmFMPVjKCqeEcut">
+    <mxGraphModel dx="850" dy="477" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="59qQrrw2uknm2KZZYIia-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" value="INÍCIO" vertex="1">
+          <mxGeometry height="50" width="160" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-3" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-2" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-4" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Usuário digita um número&#xa;int(input(...))" vertex="1">
+          <mxGeometry height="55" width="230" x="265" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-5" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-4" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;verticalAlign=middle;" value="Número é&#xa;negativo?&#xa;(numero &lt; 0)" vertex="1">
+          <mxGeometry height="80" width="200" x="280" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-7" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-6" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="59qQrrw2uknm2KZZYIia-8" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Exibe erro:&#xa;número inválido&#xa;Encerra" vertex="1">
+          <mxGeometry height="55" width="150" x="560" y="197" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-9" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-6" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="59qQrrw2uknm2KZZYIia-10" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-10" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;verticalAlign=middle;" value="Número maior&#xa;que 9999?&#xa;(numero &gt; 9999)" vertex="1">
+          <mxGeometry height="80" width="200" x="280" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-11" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-10" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="59qQrrw2uknm2KZZYIia-12" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Exibe erro:&#xa;fora do intervalo&#xa;Encerra" vertex="1">
+          <mxGeometry height="55" width="150" x="560" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-13" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-10" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="59qQrrw2uknm2KZZYIia-14" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Separar os 4 dígitos&#xa;d1 = n // 1000&#xa;d2 = (n // 100) % 10&#xa;d3 = (n // 10) % 10&#xa;d4 = n % 10" vertex="1">
+          <mxGeometry height="85" width="250" x="255" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-15" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-14" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Contar pares de dígitos iguais&#xa;(comparar os 6 pares possíveis)&#xa;iguais = 0, incrementa a cada par igual" vertex="1">
+          <mxGeometry height="70" width="270" x="245" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-17" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-16" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-18" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;verticalAlign=middle;" value="Dígitos repetidos&#xa;demais?&#xa;(iguais &gt;= 3)" vertex="1">
+          <mxGeometry height="80" width="200" x="280" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-19" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-18" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="59qQrrw2uknm2KZZYIia-20" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" value="Exibe erro:&#xa;dígitos repetidos&#xa;Encerra" vertex="1">
+          <mxGeometry height="55" width="150" x="560" y="632" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-21" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-18" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="59qQrrw2uknm2KZZYIia-22" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Exibir &quot;Número informado: X&quot;&#xa;resultado = numero&#xa;iteracao = 0" vertex="1">
+          <mxGeometry height="65" width="270" x="245" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-23" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-22" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Separar dígitos do resultado atual&#xa;d1 = resultado // 1000&#xa;d2 = (resultado // 100) % 10&#xa;d3 = (resultado // 10) % 10&#xa;d4 = resultado % 10&#xa;a=d1  b=d2  c=d3  d=d4" vertex="1">
+          <mxGeometry height="100" width="270" x="245" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-25" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-24" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Ordenar dígitos com trocas (temp)&#xa;6 comparações: if a&gt;b, if a&gt;c, if a&gt;d,&#xa;if b&gt;c, if b&gt;d, if c&gt;d&#xa;Resultado: a ≤ b ≤ c ≤ d" vertex="1">
+          <mxGeometry height="80" width="270" x="245" y="955" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-27" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-26" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Montar NDC e NDD&#xa;NDC = a×1000 + b×100 + c×10 + d&#xa;NDD = d×1000 + c×100 + b×10 + a" vertex="1">
+          <mxGeometry height="70" width="270" x="245" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-29" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-28" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" value="Subtrair&#xa;resultado = NDD − NDC&#xa;iteracao = iteracao + 1" vertex="1">
+          <mxGeometry height="65" width="270" x="245" y="1165" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-31" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-30" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-32" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Exibir iteração&#xa;&quot;Iteração N: NDD − NDC = resultado&quot;" vertex="1">
+          <mxGeometry height="60" width="260" x="250" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-33" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-32" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-34" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;verticalAlign=middle;" value="resultado&#xa;== 6174?" vertex="1">
+          <mxGeometry height="80" width="200" x="280" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-35" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-34" style="edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="59qQrrw2uknm2KZZYIia-24" value="Não">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="1390" />
+              <mxPoint x="180" y="875" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-36" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-34" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="59qQrrw2uknm2KZZYIia-37" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-37" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="Exibir &quot;Constante 6174 atingida&#xa;em N iterações&quot;" vertex="1">
+          <mxGeometry height="60" width="250" x="255" y="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-38" edge="1" parent="1" source="59qQrrw2uknm2KZZYIia-37" style="edgeStyle=orthogonalEdgeStyle;" target="59qQrrw2uknm2KZZYIia-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59qQrrw2uknm2KZZYIia-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" value="FIM" vertex="1">
+          <mxGeometry height="50" width="160" x="300" y="1550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
