@@ -13,4 +13,6 @@ A Rotina de Kaprekar é um processo matemático que, dado qualquer número de 4 
 3. A cada iteração, organiza os dígitos e faz a subtração
 4. Repete até atingir a constante **6174**
 
-## Exemplo de execução
+## Fluxograma
+
+![Fluxograma da Rotina de Kaprekar](fluxograma_kaprekar.png)
